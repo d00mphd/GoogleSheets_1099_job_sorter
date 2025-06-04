@@ -1,0 +1,14 @@
+#Jobs List on Dashboard that chnages based on the date in cell B3
+=(UNIQUE(SORT(FLATTEN(VSTACK(
+  FILTER('Fuentes Carpentry'!B3:B, 'Fuentes Carpentry'!A3:A = Dashboard!B3, 'Fuentes Carpentry'!B3:B <> ""),
+  FILTER('Cabinetry Works'!B2:B, 'Cabinetry Works'!A2:A = Dashboard!B3, 'Cabinetry Works'!B2:B <> ""),
+  FILTER('Colosia Construction'!B2:B, 'Colosia Construction'!A2:A = Dashboard!B3, 'Colosia Construction'!B2:B <> ""),
+  FILTER('Delta Finishing'!B2:B, 'Delta Finishing'!A2:A = Dashboard!B3, 'Delta Finishing'!B2:B <> ""),
+  FILTER(Accura!B2:B, Accura!A2:A = Dashboard!B3, Accura!B2:B <> ""),
+  FILTER('AJH Construction'!B2:B, 'AJH Construction'!A2:A = Dashboard!B3, 'AJH Construction'!B2:B <> ""),
+  FILTER('Jeffrey''s Painting'!B2:B, 'Jeffrey''s Painting'!A2:A = Dashboard!B3, 'Jeffrey''s Painting'!B2:B <> ""),
+  FILTER('JV Carpentry'!B2:B, 'JV Carpentry'!A2:A = Dashboard!B3, 'JV Carpentry'!B2:B <> ""),
+  FILTER('Elizondo Construction'!B2:B, 'Elizondo Construction'!A2:A = Dashboard!B3, 'Elizondo Construction'!B2:B <> ""),
+  FILTER('Elizondo Service LLC'!B2:B, 'Elizondo Service LLC'!A2:A = Dashboard!B3, 'Elizondo Service LLC'!B2:B <> "")
+))))
+)

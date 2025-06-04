@@ -1,0 +1,4 @@
+#sum of rows
+=BYROW(C4:C584, LAMBDA(job,
+    IF(job=" ", " ", SUM(INDEX(D$:M584, ROW(job)-ROW(C4)+1, )))
+))

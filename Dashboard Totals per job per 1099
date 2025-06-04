@@ -1,0 +1,40 @@
+#Produces sums per job if date matches that of Dashboard B3 and name matches in cell A3:A
+=BYROW(C4:C584, LAMBDA(job,
+  IF(job="", "", SUMIFS('Fuentes Carpentry'!I3:I, 'Fuentes Carpentry'!B3:B, job, 'Fuentes Carpentry'!A3:A, $B$3))
+))
+
+=BYROW(C4:C584, LAMBDA(job,
+  IF(job="", "", SUMIFS('Cabinetry Works'!J2:J, 'Cabinetry Works'!B2:B, job, 'Cabinetry Works'!A2:A, $B$3))
+))
+
+=BYROW(C4:C584, LAMBDA(job,
+  IF(job="", "", SUMIFS('Colosia Construction'!E2:E, 'Colosia Construction'!B2:B, job, 'Colosia Construction'!A2:A, $B$3))
+))
+
+=BYROW(C4:C584, LAMBDA(job,
+  IF(job="", "", SUMIFS('Delta Finishing'!E2:E, 'Delta Finishing'!B2:B, job, 'Delta Finishing'!A2:A, $B$3))
+))
+
+=BYROW(C4:C584, LAMBDA(job,
+  IF(job="", "", SUMIFS(Accura!E2:E, Accura!B2:B, job, Accura!A2:A, $B$3))
+))
+
+=BYROW(C4:C584, LAMBDA(job,
+  IF(job="", "", SUMIFS('AJH Construction'!D2:D, 'AJH Construction'!B2:B, job, 'AJH Construction'!A2:A, $B$3))
+))
+
+=BYROW(C4:C584, LAMBDA(job,
+  IF(job="", "", SUMIFS('Jeffrey''s Painting'!D2:D, 'Jeffrey''s Painting'!B2:B, job, 'Jeffrey''s Painting'!A2:A, $B$3))
+))
+
+=BYROW(C4:C584, LAMBDA(job,
+  IF(job="", "", SUMIFS('JV Carpentry'!G2:G, 'JV Carpentry'!B2:B, job, 'JV Carpentry'!A2:A, $B$3))
+))
+
+=BYROW(C4:C584, LAMBDA(job,
+  IF(job="", "", SUMIFS('Elizondo Construction'!F2:F, 'Elizondo Construction'!B2:B, job, 'Elizondo Construction'!A2:A, $B$3))
+))
+
+=BYROW(C4:C584, LAMBDA(job,
+  IF(job="", "", SUMIFS('Elizondo Service LLC'!F2:F, 'Elizondo Service LLC'!B2:B, job, 'Elizondo Service LLC'!A2:A, $B$3))
+))
